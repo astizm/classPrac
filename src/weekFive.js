@@ -38,5 +38,7 @@ for (let value of b) {
 }
 i = 10
 while (i-- > 6) {
+    if (i == 5)
+        continue;
     console.log(`whoo`);
 }
