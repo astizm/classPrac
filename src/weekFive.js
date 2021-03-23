@@ -36,9 +36,31 @@ let b = [1, 3, 5, 7, 9];
 for (let value of b) {
     console.log(value);
 }
-i = 10
-while (i-- > 6) {
-    if (i == 5)
+x = 10
+while (x-- > 6) {
+    if (x == 5)
         continue;
     console.log(`whoo`);
 }
+// ---------------
+//Session 2 24/03 Switch statement
+
+const month = 'March';
+switch(month) {
+    case 'March':
+        console.log(`What year is it?`);
+        break;
+    case 'April':
+        console.log(`It's April, holidays!`);
+        break;
+    case 'May':
+        console.log(`Back to class.`);
+        break;
+    case 'June':
+        console.log(`Dyls birthday :)`);
+        break;
+    default:
+        console.log(`What?`);
+        break;
+}
+
