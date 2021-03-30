@@ -1,6 +1,6 @@
 //Loops in JavaScript
 
-// let newArray = [1, 2, 3, 4, 5, 6, 7, 8];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 // for (var i = 0; i <= newArray.length; i++) {
 //     console.log(i);
 // };
@@ -36,21 +36,23 @@ let b = [1, 3, 5, 7, 9];
 for (let value of b) {
     console.log(value);
 }
+let g = 10
 x = 10
 while (x-- > 6) {
-    if (x == 5)
+    if (x == 6)
         continue;
-    console.log(`whoo`);
-}
+        x += g
+}     
+console.log(x);
 // ---------------
 //Session 2 24/03 Switch statement
 
 const month = 'March';
-switch(month) {
-    case 'March':
-        console.log(`What year is it?`);
-        break;
-    case 'April':
+switch (month) {
+    // case 'March':
+    //     console.log(`What year is it?`);
+    //     break;
+    case 'April' || 'March':
         console.log(`It's April, holidays!`);
         break;
     case 'May':
@@ -63,4 +65,19 @@ switch(month) {
         console.log(`What?`);
         break;
 }
+// loopA:
+// for (i = 0; i < 10; i++) {
+//     loopB:
+//     for (y = 0; y < arr.length; y++) {
+//         console.log(y)
+//     } if (y === i) {
+//         break loopA;
+//     }
+// };
+const object = { a: 5, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
 
