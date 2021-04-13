@@ -17,7 +17,7 @@
 //     return count%2 === 0 ? 'even' : 'odd';
 // };
 // oddOrEven(3)
-
+ 
 // function oddEven(arr) {
 //     let count = 0
 //     for (i = 0; i < arr.length; i++) {
